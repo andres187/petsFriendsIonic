@@ -36,7 +36,7 @@
   --ion-color-success-tint: #28e070;
 
   /** warning **/
-  --ion-color-warning: #ffce00;
+  --ion-color-warning: #ffcc66;
   --ion-color-warning-rgb: 255, 206, 0;
   --ion-color-warning-contrast: #ffffff;
   --ion-color-warning-contrast-rgb: 255, 255, 255;
@@ -74,4 +74,26 @@
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+
+  ion-tab-button.tab-selected {
+    ion-icon,
+    ion-label {
+      color: var(--ion-color-warning) !important;
+      --ion-color-base: var(--ion-color-warning) !important;
+    }
+  }
+
+  .ion-color-warning {
+    --ion-color-base: var(--ion-color-warning);
+    --ion-color-rgb: var(--ion-color-warning-rgb);
+    --ion-color-contrast: var(--ion-color-warning-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-warning-contrast-rgb);
+    --ion-color-shade: var(--ion-color-warning-shade);
+    --ion-color-tint: var(--ion-color-warning)-tint;
+  }
+
+  .center{
+    text-align: center;
+  }
+
 }
