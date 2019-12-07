@@ -17,4 +17,13 @@ export class HttpService {
 
     return this.http.post(url, data, options);
   }
+
+  get(serviceName: string, data: any){
+    let headers =  new HttpHeaders().set('Authorization', 'Bearer ' + data);    
+    const options = { header: headers, withCredentials: false };
+
+    const url = environment.apiUrl + serviceName;
+
+    return this.http.get(url, options);
+  }
 }
