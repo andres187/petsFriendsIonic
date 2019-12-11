@@ -1,15 +1,10 @@
-<ion-header>
-    <ion-toolbar color="warning">
-      <ion-title>Registrarse</ion-title>
-    </ion-toolbar>
-  </ion-header>
-  
-  <ion-content>
+  <ion-content padding class="bg-image">
+    <br><br><br>
     <div class="center">
         <app-logo></app-logo>
-        <h1>Crear una cuenta</h1>
     </div>
-  
+  <ion-card>
+      <h1>Crear una cuenta</h1>
     <form>
       <ion-list>
         <ion-item>
@@ -26,8 +21,8 @@
               ¿Ya tienes una cuenta? <a routerLink='/login'>Ingresa aquí.</a>
             </ion-item>
   
-          <ion-button expand="block" shape="round" color="success" (click)="signupAction()">Registrarse</ion-button>
+          <ion-button expand="block" shape="round" color="warning" (click)="signupAction()">Registrarse</ion-button>
       </ion-list>
-    </form>
+    </form></ion-card>
   </ion-content>
   

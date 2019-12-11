@@ -32,7 +32,6 @@ export class FeedPage implements OnInit {
     
     if(this.postData.user_id && this.postData.token){
       this.feedService.getFeedsData(this.postData.token).subscribe((res:any) => {
-        console.log(res.data);
         this.feedService.changeFeedData(res.data);
       }, (error: any) => {
         this.toastService.presentToast("Error de conexión.");

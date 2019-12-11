@@ -1,15 +1,14 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>Inicio</ion-title>
+  <ion-toolbar> 
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
 <ion-item>
   <h5>Bienvenido {{ displayUserData?.userName }}</h5>
-</ion-item>
-<ion-item>  
-    <p>Servicos disponibles: </p>
 </ion-item>
 <app-feed-card></app-feed-card>
 </ion-content>

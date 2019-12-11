@@ -10,7 +10,7 @@ import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
-  declarations: [SlidesComponent, StartComponent, LogoComponent, FeedCardComponent],
+  declarations: [SlidesComponent, StartComponent, LogoComponent, FeedCardComponent], 
   exports: [SlidesComponent, StartComponent, LogoComponent, FeedCardComponent],
   imports: [
     CommonModule,

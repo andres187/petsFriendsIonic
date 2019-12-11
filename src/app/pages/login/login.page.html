@@ -1,19 +1,14 @@
-<ion-header>
-  <ion-toolbar color="warning">
-    <ion-title>login</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content>
+<ion-content padding class="bg-image">
   <div class="center">
-      <app-logo></app-logo>
-      <h1>Ingresar</h1>
+    <br><br><br>  
+    <app-logo></app-logo>
   </div>
-
+<ion-card>
+    <h1>Ingresar</h1>
   <form>
     <ion-list>
       <ion-item>
-        <ion-label positon="stacked">Usuario</ion-label>
+        <ion-label positon="stacked">Email</ion-label>
         <ion-input autocomplete="off" name="username" type="text" [(ngModel)]="postData.email"></ion-input>
       </ion-item>
 
@@ -26,7 +21,7 @@
         <a routerLink='/signup'>Registrarse.</a>
       </ion-item>
 
-      <ion-button expand="block" shape="round" color="success" (click)="loginAction()">Ingresar</ion-button>
+      <ion-button expand="block" shape="round" color="warning" (click)="loginAction()">Ingresar</ion-button>
     </ion-list>
-  </form>
+  </form></ion-card>
 </ion-content>

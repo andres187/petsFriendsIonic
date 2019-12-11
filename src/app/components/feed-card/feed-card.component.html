@@ -1,4 +1,13 @@
+<div *ngIf="!feedDataById" >
 <ion-card *ngFor="let servicio of feedData; let i = index">
-  <ion-card-content [innerHTML]="servicio.titulo">
+  <ion-card-content [innerHTML]="servicio.titulo" (click)="getFeedDataById(servicio.id)">
   </ion-card-content>
 </ion-card>
+</div>
+<div *ngIf="feedDataById" >
+  <ion-card *ngFor="let servicio of feedDataById; let i = index">
+    <ion-card-content [innerHTML]="servicio.titulo">
+    </ion-card-content>
+  </ion-card>
+  <ion-button color="light" (click)="volver()">Volver</ion-button>
+</div>

@@ -1,0 +1,16 @@
+ion-content {
+    --background: none; 
+  }
+ 
+.bg-image{
+background-image: url('../../../assets/images/fondo.jpg');
+background-size: 100%;
+background-color: #f1f3f5;
+}
+
+h1 {
+    background-color: #f1f3f5;
+    color: black;
+    text-shadow: 1px 1px #ffc107;
+    padding: 12px;
+  }
